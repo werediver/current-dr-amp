@@ -1,0 +1,96 @@
+**********************************************************
+*
+* BCM61B
+*
+* Nexperia
+*
+* Matched double NPN/NPN Transistor
+* IC   = 100 mA
+* VCEO = 45 V 
+* hFE  = 200 - 450 @ 5V/2mA
+*
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT 143
+* 
+* Package Pin 1:   Collector;Base   	TR;TR1,TR2
+* Package Pin 2:   Collector        	TR1
+* Package Pin 3;4: Emitter          	TR1;TR2
+* 
+*
+* Extraction date (week/year): 02/2009
+* Spicemodel does not include temperature dependency
+*
+**********************************************************
+*#
+* Please note: The following model is to be used twice in 
+* schematic due to equality of both Transistors.
+*
+*
+* Diode D1, Transistor Q2 and resistor RQ
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+.SUBCKT BCM61B 1 2 3
+Q1 1 2 3 MAIN 0.9289 
+Q2 11 2 3 MAIN 0.07107
+RQ 1 11 324.8
+D1 2 1 DIODE 
+*
+.MODEL MAIN NPN 
++ IS = 7.908E-015 
++ NF = 0.9767 
++ ISE = 5.297E-016 
++ NE = 1.344 
++ BF = 288 
++ IKF = 0.07763 
++ VAF = 50.6 
++ NR = 0.9772 
++ ISC = 2.622E-017 
++ NC = 1.227 
++ BR = 8.011 
++ IKR = 0.02229 
++ VAR = 39 
++ RB = 76 
++ IRB = 0.00015 
++ RBM = 1.2 
++ RE = 0.6235 
++ RC = 0.3131 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.24E-011 
++ VJE = 0.6708 
++ MJE = 0.348 
++ TF = 5.5E-010 
++ XTF = 30 
++ VTF = 2 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.264E-012 
++ VJC = 0.5079 
++ MJC = 0.42 
++ XCJC = 1 
++ TR = 1.3E-007 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78
+.MODEL DIODE D 
++ IS = 7.905E-016 
++ N = 0.989 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 2566 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS
+*
