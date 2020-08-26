@@ -1,0 +1,5 @@
+# KiCad files
+*.*-bak
+*-cache.*
+fp-info-cache
+fp-lib-table
