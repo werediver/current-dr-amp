@@ -2,6 +2,7 @@
 *.log
 *.net
 *.raw
+*.plt
 
 # KiCad files
 *.*-bak
