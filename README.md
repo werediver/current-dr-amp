@@ -2,21 +2,19 @@
 
 This is a "current drive" or VCCS class A headphone amplifier. Some advocacy of current drive (as well as a whole book on the topic) can be found at [current-drive.info](https://www.current-drive.info/6).
 
-## Prototype
+The first prototype is briefly described on [Prototype](texts/prototype.md) page.
 
-A single channel of the Current Dr. amplifier has been prototyped according to the following schematic.
+## Schematic
 
-![KiCad schematic](images/current-dr-amp-schematic-kicad.png)
+The current version of the schematic is showed below.
 
-There are a few placeholder components present (R2–R4) and some were added after debugging the prototype (C1–C4).
+![Current Dr. schematic](images/current-dr-amp-kicad-schematic-r3.png)
 
-The initial set-up consists of two operations:
+Changes comparing to the prototype are:
 
-- setting the quiescent current through the reference current sink Q2–Q3 to about 2.5 mA by adjusting R1 and measuring the voltage drop across R5–R6
-- setting the output DC offset to a fraction of a mV by adjusting R10 and measuring voltage at the output with a load connected (a resistor of a few hundreds ohm is a suitable load)
+- supply voltages are set to ±14 V / ±16 V (to power from 12 VAC transformer)
+- R4–R9 are updated to match the new supply voltages and fit the commonly available resistor values
+- R11–R12 are adjusted so that the output power in a 38 Ω load is about 1 W (can be adjusted to better fit other load, depending on your needs)
+- connectors are changed to Molex KK 256
 
-The assembled prototype looks like this.
-
-![Prototype](images/current-dr-amp-prototype.jpeg)
-
-I haven't been able to measure the frequency response, THD, or the output impedance of the prototype yet. Listening to a single channel output suggests it has some potential, hence a proper characterization and development of a standalone stereo amplifier is to be done.
+The new PCB is going to be 80x50 mm (twice as little as the prototype board).
