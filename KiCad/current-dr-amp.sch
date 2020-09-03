@@ -16,19 +16,19 @@ $EndDescr
 $Comp
 L Device:C C9
 U 1 1 5E61D738
-P 3250 3900
+P 3350 3800
 AR Path="/5E61D738" Ref="C9"  Part="1" 
 AR Path="/5E684FD1/5E61D738" Ref="C?"  Part="1" 
 AR Path="/5E6C63D3/5E61D738" Ref="C?"  Part="1" 
-F 0 "C9" V 2998 3900 50  0000 C CNN
-F 1 "4.7u" V 3089 3900 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L24.0mm_W12.8mm_P22.50mm_MKT" H 3288 3750 50  0001 C CNN
-F 3 "~" H 3250 3900 50  0001 C CNN
-	1    3250 3900
+F 0 "C9" V 3098 3800 50  0000 C CNN
+F 1 "4.7u" V 3189 3800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L24.0mm_W12.8mm_P22.50mm_MKT" H 3388 3650 50  0001 C CNN
+F 3 "~" H 3350 3800 50  0001 C CNN
+	1    3350 3800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 3900 3100 3900
+	3000 3800 3200 3800
 $Comp
 L Device:R R4
 U 1 1 5E61D73F
@@ -168,10 +168,6 @@ Wire Wire Line
 Wire Wire Line
 	6350 5000 6350 4900
 Wire Wire Line
-	5200 4000 5500 4000
-Wire Wire Line
-	5500 4000 5500 3000
-Wire Wire Line
 	5500 1050 5500 950 
 Wire Wire Line
 	6750 1450 6750 1550
@@ -274,19 +270,17 @@ Connection ~ 7150 4000
 $Comp
 L power:GND #PWR011
 U 1 1 5E61D89B
-P 3600 3500
+P 3900 3900
 AR Path="/5E61D89B" Ref="#PWR011"  Part="1" 
 AR Path="/5E684FD1/5E61D89B" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E61D89B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR011" H 3600 3250 50  0001 C CNN
-F 1 "GND" H 3605 3327 50  0000 C CNN
-F 2 "" H 3600 3500 50  0001 C CNN
-F 3 "" H 3600 3500 50  0001 C CNN
-	1    3600 3500
+F 0 "#PWR011" H 3900 3650 50  0001 C CNN
+F 1 "GND" H 3905 3727 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 3900 3800 3900
 Wire Wire Line
 	5150 3200 5150 3300
 $Comp
@@ -330,54 +324,19 @@ Wire Wire Line
 	6750 5650 6750 5750
 Connection ~ 6900 5750
 $Comp
-L Connector_Generic:Conn_02x01 J2
-U 1 1 5E755AED
-P 2600 3900
-F 0 "J2" H 2650 4117 50  0000 C CNN
-F 1 "LINE_IN" H 2650 4026 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 2600 3900 50  0001 C CNN
-F 3 "~" H 2600 3900 50  0001 C CNN
-	1    2600 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
+L power:GND #PWR08
 U 1 1 5E757256
-P 2200 3900
-AR Path="/5E757256" Ref="#PWR06"  Part="1" 
+P 2900 3900
+AR Path="/5E757256" Ref="#PWR08"  Part="1" 
 AR Path="/5E684FD1/5E757256" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E757256" Ref="#PWR?"  Part="1" 
-F 0 "#PWR06" H 2200 3650 50  0001 C CNN
-F 1 "GND" H 2205 3727 50  0000 C CNN
-F 2 "" H 2200 3900 50  0001 C CNN
-F 3 "" H 2200 3900 50  0001 C CNN
-	1    2200 3900
+F 0 "#PWR08" H 2900 3650 50  0001 C CNN
+F 1 "GND" H 2905 3727 50  0000 C CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 "" H 2900 3900 50  0001 C CNN
+	1    2900 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 3900 2200 3900
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J3
-U 1 1 5E75DA15
-P 4000 3800
-F 0 "J3" H 4050 4017 50  0000 C CNN
-F 1 "ATT" H 4050 3926 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical" H 4000 3800 50  0001 C CNN
-F 3 "~" H 4000 3800 50  0001 C CNN
-	1    4000 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3800 4300 3500
-Wire Wire Line
-	4300 3500 3800 3500
-Wire Wire Line
-	3800 3800 3800 3500
-Connection ~ 3800 3500
-Wire Wire Line
-	3800 3500 3600 3500
-Wire Wire Line
-	4300 3900 4600 3900
 Wire Wire Line
 	5900 1050 5500 1050
 $Comp
@@ -421,152 +380,10 @@ Wire Wire Line
 Wire Wire Line
 	6350 5000 5900 5000
 Wire Wire Line
-	5500 3000 5900 3000
-Wire Wire Line
 	5900 3000 5900 3850
 Connection ~ 5900 3000
 Wire Wire Line
 	5900 3000 6350 3000
-Text GLabel 3600 950  2    50   Input ~ 0
-Vcc
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5E782A3C
-P 1800 1350
-AR Path="/5E782A3C" Ref="#FLG01"  Part="1" 
-AR Path="/5E684FD1/5E782A3C" Ref="#FLG?"  Part="1" 
-AR Path="/5E6C63D3/5E782A3C" Ref="#FLG?"  Part="1" 
-F 0 "#FLG01" H 1800 1425 50  0001 C CNN
-F 1 "PWR_FLAG" V 1800 1478 50  0000 L CNN
-F 2 "" H 1800 1350 50  0001 C CNN
-F 3 "~" H 1800 1350 50  0001 C CNN
-	1    1800 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5E782A44
-P 2900 1350
-AR Path="/5E782A44" Ref="#FLG04"  Part="1" 
-AR Path="/5E684FD1/5E782A44" Ref="#FLG?"  Part="1" 
-AR Path="/5E6C63D3/5E782A44" Ref="#FLG?"  Part="1" 
-F 0 "#FLG04" H 2900 1425 50  0001 C CNN
-F 1 "PWR_FLAG" V 2900 1478 50  0000 L CNN
-F 2 "" H 2900 1350 50  0001 C CNN
-F 3 "~" H 2900 1350 50  0001 C CNN
-	1    2900 1350
-	-1   0    0    1   
-$EndComp
-Text GLabel 1300 950  0    50   Input ~ 0
-Vcc_hi
-Text GLabel 1600 850  0    50   Input ~ 0
-Vee_hi
-$Comp
-L power:PWR_FLAG #FLG05
-U 1 1 5E782A60
-P 3100 1350
-AR Path="/5E782A60" Ref="#FLG05"  Part="1" 
-AR Path="/5E684FD1/5E782A60" Ref="#FLG?"  Part="1" 
-AR Path="/5E6C63D3/5E782A60" Ref="#FLG?"  Part="1" 
-F 0 "#FLG05" H 3100 1425 50  0001 C CNN
-F 1 "PWR_FLAG" V 3100 1478 50  0000 L CNN
-F 2 "" H 3100 1350 50  0001 C CNN
-F 3 "~" H 3100 1350 50  0001 C CNN
-	1    3100 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5E782A66
-P 2700 1350
-AR Path="/5E782A66" Ref="#FLG03"  Part="1" 
-AR Path="/5E684FD1/5E782A66" Ref="#FLG?"  Part="1" 
-AR Path="/5E6C63D3/5E782A66" Ref="#FLG?"  Part="1" 
-F 0 "#FLG03" H 2700 1425 50  0001 C CNN
-F 1 "PWR_FLAG" V 2700 1478 50  0000 L CNN
-F 2 "" H 2700 1350 50  0001 C CNN
-F 3 "~" H 2700 1350 50  0001 C CNN
-	1    2700 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5E7B2F73
-P 2000 1350
-AR Path="/5E7B2F73" Ref="#FLG02"  Part="1" 
-AR Path="/5E684FD1/5E7B2F73" Ref="#FLG?"  Part="1" 
-AR Path="/5E6C63D3/5E7B2F73" Ref="#FLG?"  Part="1" 
-F 0 "#FLG02" H 2000 1425 50  0001 C CNN
-F 1 "PWR_FLAG" V 2000 1478 50  0000 L CNN
-F 2 "" H 2000 1350 50  0001 C CNN
-F 3 "~" H 2000 1350 50  0001 C CNN
-	1    2000 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Top_Bottom J1
-U 1 1 5E6C6CA1
-P 2400 950
-F 0 "J1" H 2450 1267 50  0000 C CNN
-F 1 "POWER" H 2450 1176 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal" H 2400 950 50  0001 C CNN
-F 3 "~" H 2400 950 50  0001 C CNN
-	1    2400 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 950  2900 950 
-Wire Wire Line
-	3300 850  3100 850 
-Text GLabel 3300 850  2    50   Input ~ 0
-Vee
-Wire Wire Line
-	2200 1250 2200 1050
-Wire Wire Line
-	2700 1050 2700 1250
-Wire Wire Line
-	2700 1250 2200 1250
-Connection ~ 2200 1250
-Connection ~ 3100 850 
-Wire Wire Line
-	2200 1350 2200 1250
-$Comp
-L power:GND #PWR05
-U 1 1 5E7B1DDB
-P 2200 1350
-F 0 "#PWR05" H 2200 1100 50  0001 C CNN
-F 1 "GND" H 2205 1177 50  0000 C CNN
-F 2 "" H 2200 1350 50  0001 C CNN
-F 3 "" H 2200 1350 50  0001 C CNN
-	1    2200 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1350 2700 1250
-Connection ~ 2700 1250
-Wire Wire Line
-	2700 850  3100 850 
-Wire Wire Line
-	2900 950  2700 950 
-Connection ~ 2900 950 
-Wire Wire Line
-	1300 950  2000 950 
-Wire Wire Line
-	1600 850  1800 850 
-Wire Wire Line
-	1800 850  1800 1350
-Connection ~ 1800 850 
-Wire Wire Line
-	1800 850  2200 850 
-Wire Wire Line
-	2000 950  2000 1350
-Connection ~ 2000 950 
-Wire Wire Line
-	2000 950  2200 950 
-Wire Wire Line
-	2900 950  2900 1350
-Wire Wire Line
-	3100 850  3100 1350
 Wire Wire Line
 	2500 5000 2600 5000
 Wire Wire Line
@@ -574,13 +391,13 @@ Wire Wire Line
 Wire Wire Line
 	2600 5400 2600 5450
 $Comp
-L power:GND #PWR07
+L power:GND #PWR06
 U 1 1 5F4C6C6C
 P 2600 5450
-AR Path="/5F4C6C6C" Ref="#PWR07"  Part="1" 
+AR Path="/5F4C6C6C" Ref="#PWR06"  Part="1" 
 AR Path="/5E684FD1/5F4C6C6C" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5F4C6C6C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR07" H 2600 5200 50  0001 C CNN
+F 0 "#PWR06" H 2600 5200 50  0001 C CNN
 F 1 "GND" H 2605 5277 50  0000 C CNN
 F 2 "" H 2600 5450 50  0001 C CNN
 F 3 "" H 2600 5450 50  0001 C CNN
@@ -624,13 +441,13 @@ Wire Wire Line
 Wire Wire Line
 	2600 5750 2600 5850
 $Comp
-L power:GND #PWR08
+L power:GND #PWR07
 U 1 1 5F57DF1A
 P 2600 6200
-AR Path="/5F57DF1A" Ref="#PWR08"  Part="1" 
+AR Path="/5F57DF1A" Ref="#PWR07"  Part="1" 
 AR Path="/5E684FD1/5F57DF1A" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5F57DF1A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR08" H 2600 5950 50  0001 C CNN
+F 0 "#PWR07" H 2600 5950 50  0001 C CNN
 F 1 "GND" H 2605 6027 50  0000 C CNN
 F 2 "" H 2600 6200 50  0001 C CNN
 F 3 "" H 2600 6200 50  0001 C CNN
@@ -759,35 +576,20 @@ Wire Wire Line
 	6750 1550 7950 1550
 Wire Wire Line
 	6750 1050 8850 1050
-Wire Wire Line
-	9750 3400 9950 3400
 $Comp
-L power:GND #PWR019
+L power:GND #PWR016
 U 1 1 5E7F3380
-P 9950 3400
-AR Path="/5E7F3380" Ref="#PWR019"  Part="1" 
+P 9250 3500
+AR Path="/5E7F3380" Ref="#PWR016"  Part="1" 
 AR Path="/5E684FD1/5E7F3380" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E7F3380" Ref="#PWR?"  Part="1" 
-F 0 "#PWR019" H 9950 3150 50  0001 C CNN
-F 1 "GND" H 9955 3227 50  0000 C CNN
-F 2 "" H 9950 3400 50  0001 C CNN
-F 3 "" H 9950 3400 50  0001 C CNN
-	1    9950 3400
+F 0 "#PWR016" H 9250 3250 50  0001 C CNN
+F 1 "GND" H 9255 3327 50  0000 C CNN
+F 2 "" H 9250 3500 50  0001 C CNN
+F 3 "" H 9250 3500 50  0001 C CNN
+	1    9250 3500
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J4
-U 1 1 5E7F337A
-P 9550 3400
-F 0 "J4" H 9600 3617 50  0000 C CNN
-F 1 "LINE_OUT" H 9600 3526 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 9550 3400 50  0001 C CNN
-F 3 "~" H 9550 3400 50  0001 C CNN
-	1    9550 3400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 3400 9250 3400
 Connection ~ 8850 3400
 Wire Wire Line
 	8850 2800 8850 3400
@@ -826,13 +628,13 @@ F 3 "" H 9950 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L power:GND #PWR018
 U 1 1 5E61D85E
 P 9450 6200
-AR Path="/5E61D85E" Ref="#PWR017"  Part="1" 
+AR Path="/5E61D85E" Ref="#PWR018"  Part="1" 
 AR Path="/5E684FD1/5E61D85E" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E61D85E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR017" H 9450 5950 50  0001 C CNN
+F 0 "#PWR018" H 9450 5950 50  0001 C CNN
 F 1 "GND" H 9455 6027 50  0000 C CNN
 F 2 "" H 9450 6200 50  0001 C CNN
 F 3 "" H 9450 6200 50  0001 C CNN
@@ -851,13 +653,13 @@ Wire Wire Line
 Wire Wire Line
 	8850 5750 9450 5750
 $Comp
-L power:GND #PWR018
+L power:GND #PWR019
 U 1 1 5E61D850
 P 9950 1500
-AR Path="/5E61D850" Ref="#PWR018"  Part="1" 
+AR Path="/5E61D850" Ref="#PWR019"  Part="1" 
 AR Path="/5E684FD1/5E61D850" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E61D850" Ref="#PWR?"  Part="1" 
-F 0 "#PWR018" H 9950 1250 50  0001 C CNN
+F 0 "#PWR019" H 9950 1250 50  0001 C CNN
 F 1 "GND" H 9955 1327 50  0000 C CNN
 F 2 "" H 9950 1500 50  0001 C CNN
 F 3 "" H 9950 1500 50  0001 C CNN
@@ -865,13 +667,13 @@ F 3 "" H 9950 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L power:GND #PWR017
 U 1 1 5E61D84A
 P 9450 1500
-AR Path="/5E61D84A" Ref="#PWR016"  Part="1" 
+AR Path="/5E61D84A" Ref="#PWR017"  Part="1" 
 AR Path="/5E684FD1/5E61D84A" Ref="#PWR?"  Part="1" 
 AR Path="/5E6C63D3/5E61D84A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR016" H 9450 1250 50  0001 C CNN
+F 0 "#PWR017" H 9450 1250 50  0001 C CNN
 F 1 "GND" H 9455 1327 50  0000 C CNN
 F 2 "" H 9450 1500 50  0001 C CNN
 F 3 "" H 9450 1500 50  0001 C CNN
@@ -1287,4 +1089,204 @@ Connection ~ 1400 5750
 Wire Wire Line
 	2600 5750 3000 5750
 Connection ~ 2600 5750
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5F7BD503
+P 1600 950
+F 0 "J1" V 1564 662 50  0000 R CNN
+F 1 "POWER" V 1473 662 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 1600 950 50  0001 C CNN
+F 3 "~" H 1600 950 50  0001 C CNN
+	1    1600 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5F7BEBA7
+P 4000 3500
+F 0 "J3" V 3964 3312 50  0000 R CNN
+F 1 "ATT" V 3873 3312 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4000 3500 50  0001 C CNN
+F 3 "~" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F7BFD04
+P 2900 3500
+F 0 "J2" V 2864 3312 50  0000 R CNN
+F 1 "IN" V 2773 3312 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2900 3500 50  0001 C CNN
+F 3 "~" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5F7C0455
+P 9250 3100
+F 0 "J4" V 9214 2912 50  0000 R CNN
+F 1 "OUT" V 9123 2912 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9250 3100 50  0001 C CNN
+F 3 "~" H 9250 3100 50  0001 C CNN
+	1    9250 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 3800 4100 3700
+Wire Wire Line
+	3500 3800 4100 3800
+Wire Wire Line
+	4000 3700 4000 3900
+Wire Wire Line
+	3900 3700 3900 3900
+Wire Wire Line
+	4000 3900 4600 3900
+Wire Wire Line
+	2900 3700 2900 3900
+Wire Wire Line
+	3000 3700 3000 3800
+Wire Wire Line
+	9350 3400 9350 3300
+Wire Wire Line
+	8850 3400 9350 3400
+Wire Wire Line
+	9250 3300 9250 3500
+Wire Wire Line
+	1400 1150 1400 1250
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F84C2B5
+P 1400 2250
+AR Path="/5F84C2B5" Ref="#FLG01"  Part="1" 
+AR Path="/5E684FD1/5F84C2B5" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/5F84C2B5" Ref="#FLG?"  Part="1" 
+F 0 "#FLG01" H 1400 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1400 2378 50  0000 L CNN
+F 2 "" H 1400 2250 50  0001 C CNN
+F 3 "~" H 1400 2250 50  0001 C CNN
+	1    1400 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1150 1500 1450
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F85B14F
+P 1500 2250
+AR Path="/5F85B14F" Ref="#FLG02"  Part="1" 
+AR Path="/5E684FD1/5F85B14F" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/5F85B14F" Ref="#FLG?"  Part="1" 
+F 0 "#FLG02" H 1500 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 2378 50  0000 L CNN
+F 2 "" H 1500 2250 50  0001 C CNN
+F 3 "~" H 1500 2250 50  0001 C CNN
+	1    1500 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 1150 1600 1650
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5F86294C
+P 1600 2250
+AR Path="/5F86294C" Ref="#FLG03"  Part="1" 
+AR Path="/5E684FD1/5F86294C" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/5F86294C" Ref="#FLG?"  Part="1" 
+F 0 "#FLG03" H 1600 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1600 2378 50  0000 L CNN
+F 2 "" H 1600 2250 50  0001 C CNN
+F 3 "~" H 1600 2250 50  0001 C CNN
+	1    1600 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 1150 1700 1950
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5F86A231
+P 1700 2250
+AR Path="/5F86A231" Ref="#FLG04"  Part="1" 
+AR Path="/5E684FD1/5F86A231" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/5F86A231" Ref="#FLG?"  Part="1" 
+F 0 "#FLG04" H 1700 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1700 2378 50  0000 L CNN
+F 2 "" H 1700 2250 50  0001 C CNN
+F 3 "~" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 1150 1800 2150
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5F871D61
+P 1800 2250
+AR Path="/5F871D61" Ref="#FLG05"  Part="1" 
+AR Path="/5E684FD1/5F871D61" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/5F871D61" Ref="#FLG?"  Part="1" 
+F 0 "#FLG05" H 1800 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1800 2378 50  0000 L CNN
+F 2 "" H 1800 2250 50  0001 C CNN
+F 3 "~" H 1800 2250 50  0001 C CNN
+	1    1800 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1250 2000 1250
+Connection ~ 1400 1250
+Wire Wire Line
+	1400 1250 1400 2250
+Wire Wire Line
+	1500 1450 2000 1450
+Connection ~ 1500 1450
+Wire Wire Line
+	1500 1450 1500 2250
+Wire Wire Line
+	1600 1650 2000 1650
+Connection ~ 1600 1650
+Wire Wire Line
+	1600 1650 1600 2250
+Wire Wire Line
+	1700 1950 2000 1950
+Connection ~ 1700 1950
+Wire Wire Line
+	1700 1950 1700 2250
+Wire Wire Line
+	1800 2150 2000 2150
+Connection ~ 1800 2150
+Wire Wire Line
+	1800 2150 1800 2250
+$Comp
+L power:GND #PWR05
+U 1 1 5F8B917A
+P 2000 1650
+F 0 "#PWR05" H 2000 1400 50  0001 C CNN
+F 1 "GND" H 2005 1477 50  0000 C CNN
+F 2 "" H 2000 1650 50  0001 C CNN
+F 3 "" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 2150 2    50   Input ~ 0
+Vee_hi
+Text GLabel 2000 1950 2    50   Input ~ 0
+Vee
+Text GLabel 2000 1450 2    50   Input ~ 0
+Vcc
+Text GLabel 2000 1250 2    50   Input ~ 0
+Vcc_hi
+Text GLabel 6750 5850 3    50   Input ~ 0
+Vee
+Wire Wire Line
+	6750 5850 6750 5750
+Connection ~ 6750 5750
+Connection ~ 5900 5000
+Wire Wire Line
+	5600 4000 5600 5000
+Wire Wire Line
+	5200 4000 5600 4000
+Wire Wire Line
+	5600 5000 5900 5000
 $EndSCHEMATC
