@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "Current Dr. headphone amplifier"
+Date ""
+Rev "3"
+Comp "Raman Fedaseyeu"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5100 1200 1700 1250
+U 5FB47947
+F0 "Channel L" 50
+F1 "current-dr-chan.sch" 50
+F2 "IN" I L 5100 1300 50 
+F3 "OUT" O R 6800 1300 50 
+$EndSheet
+$Sheet
+S 5100 2900 1700 1250
+U 5FC020B9
+F0 "Channel R" 50
+F1 "current-dr-chan.sch" 50
+F2 "IN" I L 5100 3000 50 
+F3 "OUT" O R 6800 3000 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 602ABE57
+P 1250 1050
+AR Path="/5FB47947/602ABE57" Ref="J?"  Part="1" 
+AR Path="/5FC020B9/602ABE57" Ref="J?"  Part="1" 
+AR Path="/602ABE57" Ref="J1"  Part="1" 
+F 0 "J1" V 1214 762 50  0000 R CNN
+F 1 "POWER" V 1123 762 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 1250 1050 50  0001 C CNN
+F 3 "~" H 1250 1050 50  0001 C CNN
+	1    1250 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 1250 1050 1350
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 602ABE5E
+P 1050 2350
+AR Path="/602ABE5E" Ref="#FLG01"  Part="1" 
+AR Path="/5E684FD1/602ABE5E" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/602ABE5E" Ref="#FLG?"  Part="1" 
+AR Path="/5FB47947/602ABE5E" Ref="#FLG?"  Part="1" 
+AR Path="/5FC020B9/602ABE5E" Ref="#FLG?"  Part="1" 
+F 0 "#FLG01" H 1050 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 1050 2478 50  0000 L CNN
+F 2 "" H 1050 2350 50  0001 C CNN
+F 3 "~" H 1050 2350 50  0001 C CNN
+	1    1050 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 1250 1150 1550
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 602ABE65
+P 1150 2350
+AR Path="/602ABE65" Ref="#FLG02"  Part="1" 
+AR Path="/5E684FD1/602ABE65" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/602ABE65" Ref="#FLG?"  Part="1" 
+AR Path="/5FB47947/602ABE65" Ref="#FLG?"  Part="1" 
+AR Path="/5FC020B9/602ABE65" Ref="#FLG?"  Part="1" 
+F 0 "#FLG02" H 1150 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 1150 2478 50  0000 L CNN
+F 2 "" H 1150 2350 50  0001 C CNN
+F 3 "~" H 1150 2350 50  0001 C CNN
+	1    1150 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 1250 1250 1750
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 602ABE6C
+P 1250 2350
+AR Path="/602ABE6C" Ref="#FLG03"  Part="1" 
+AR Path="/5E684FD1/602ABE6C" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/602ABE6C" Ref="#FLG?"  Part="1" 
+AR Path="/5FB47947/602ABE6C" Ref="#FLG?"  Part="1" 
+AR Path="/5FC020B9/602ABE6C" Ref="#FLG?"  Part="1" 
+F 0 "#FLG03" H 1250 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 1250 2478 50  0000 L CNN
+F 2 "" H 1250 2350 50  0001 C CNN
+F 3 "~" H 1250 2350 50  0001 C CNN
+	1    1250 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 602ABE72
+P 1350 2350
+AR Path="/602ABE72" Ref="#FLG04"  Part="1" 
+AR Path="/5E684FD1/602ABE72" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/602ABE72" Ref="#FLG?"  Part="1" 
+AR Path="/5FB47947/602ABE72" Ref="#FLG?"  Part="1" 
+AR Path="/5FC020B9/602ABE72" Ref="#FLG?"  Part="1" 
+F 0 "#FLG04" H 1350 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 2478 50  0000 L CNN
+F 2 "" H 1350 2350 50  0001 C CNN
+F 3 "~" H 1350 2350 50  0001 C CNN
+	1    1350 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1250 1450 2250
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 602ABE79
+P 1450 2350
+AR Path="/602ABE79" Ref="#FLG05"  Part="1" 
+AR Path="/5E684FD1/602ABE79" Ref="#FLG?"  Part="1" 
+AR Path="/5E6C63D3/602ABE79" Ref="#FLG?"  Part="1" 
+AR Path="/5FB47947/602ABE79" Ref="#FLG?"  Part="1" 
+AR Path="/5FC020B9/602ABE79" Ref="#FLG?"  Part="1" 
+F 0 "#FLG05" H 1450 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 1450 2478 50  0000 L CNN
+F 2 "" H 1450 2350 50  0001 C CNN
+F 3 "~" H 1450 2350 50  0001 C CNN
+	1    1450 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 1350 1650 1350
+Connection ~ 1050 1350
+Wire Wire Line
+	1050 1350 1050 2350
+Wire Wire Line
+	1150 1550 1650 1550
+Connection ~ 1150 1550
+Wire Wire Line
+	1150 1550 1150 2350
+Connection ~ 1250 1750
+Wire Wire Line
+	1250 1750 1250 2350
+Wire Wire Line
+	1350 2050 1650 2050
+Connection ~ 1350 2050
+Wire Wire Line
+	1350 2050 1350 2350
+Wire Wire Line
+	1450 2250 1650 2250
+Connection ~ 1450 2250
+Wire Wire Line
+	1450 2250 1450 2350
+$Comp
+L power:GND #PWR?
+U 1 1 602ABE8D
+P 1650 1750
+AR Path="/5FB47947/602ABE8D" Ref="#PWR?"  Part="1" 
+AR Path="/5FC020B9/602ABE8D" Ref="#PWR?"  Part="1" 
+AR Path="/602ABE8D" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1650 1500 50  0001 C CNN
+F 1 "GND" H 1655 1577 50  0000 C CNN
+F 2 "" H 1650 1750 50  0001 C CNN
+F 3 "" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 1550 2    50   Input ~ 0
+Vee_hi
+Text GLabel 1650 2250 2    50   Input ~ 0
+Vee
+Text GLabel 1650 2050 2    50   Input ~ 0
+Vcc
+Text GLabel 1650 1350 2    50   Input ~ 0
+Vcc_hi
+Wire Wire Line
+	1350 1250 1350 2050
+Wire Wire Line
+	1250 1750 1650 1750
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 602B00B1
+P 3900 1050
+F 0 "J2" V 3864 862 50  0000 R CNN
+F 1 "IN" V 3773 862 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 3900 1050 50  0001 C CNN
+F 3 "~" H 3900 1050 50  0001 C CNN
+	1    3900 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 1250 3800 1300
+Wire Wire Line
+	3800 1300 5100 1300
+Wire Wire Line
+	4000 1250 4000 3000
+Wire Wire Line
+	4000 3000 5100 3000
+Wire Wire Line
+	3900 1250 3900 1350
+$Comp
+L power:GND #PWR01
+U 1 1 602B5FEB
+P 3900 1350
+F 0 "#PWR01" H 3900 1100 50  0001 C CNN
+F 1 "GND" H 3905 1177 50  0000 C CNN
+F 2 "" H 3900 1350 50  0001 C CNN
+F 3 "" H 3900 1350 50  0001 C CNN
+	1    3900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 602B8781
+P 7650 1050
+F 0 "J3" V 7614 862 50  0000 R CNN
+F 1 "OUT" V 7523 862 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 7650 1050 50  0001 C CNN
+F 3 "~" H 7650 1050 50  0001 C CNN
+	1    7650 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 1300 7550 1300
+Wire Wire Line
+	7550 1300 7550 1250
+Wire Wire Line
+	7750 1250 7750 3000
+Wire Wire Line
+	7750 3000 6800 3000
+$Comp
+L power:GND #PWR03
+U 1 1 602B9880
+P 7650 1300
+F 0 "#PWR03" H 7650 1050 50  0001 C CNN
+F 1 "GND" H 7655 1127 50  0000 C CNN
+F 2 "" H 7650 1300 50  0001 C CNN
+F 3 "" H 7650 1300 50  0001 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1250 7650 1300
+$EndSCHEMATC
