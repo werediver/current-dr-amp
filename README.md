@@ -8,13 +8,6 @@ The first prototype is briefly described on [Prototype](texts/prototype.md) page
 
 The current version of the schematic is showed below.
 
-![Current Dr. schematic](images/current-dr-amp-kicad-schematic-r3.png)
+![Current Dr. schematic](images/current-dr-amp-kicad-schematic-r4.png)
 
-Changes comparing to the prototype are:
-
-- supply voltages are set to ±14 V / ±16 V (to power from 12 VAC transformer)
-- R4–R9 are updated to match the new supply voltages and fit the commonly available resistor values
-- R11–R12 are adjusted so that the output power in a 38 Ω load is about 1 W (can be adjusted to better fit other load, depending on your needs)
-- connectors are changed to Molex KK 256
-
-The new PCB is going to be 80x50 mm (twice as little as the prototype board).
+Two such channels with a dedicated [linear PSU](texts/psu.md) are going to be fit into an extruded aluminum enclosure with internal dimensions of 96x155x50 mm.
